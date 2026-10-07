@@ -10,7 +10,7 @@
 * 🔊 **Voice Response** — Responds using text-to-speech
 * 🕐 **Time Information** — Tells the current time
 * 📅 **Date Information** — Tells today's date
-* 🌐 **Open Google** — Opens Google in your default browser
+* 🌐 **Open Google** — Opens Google directly
 * ▶️ **Open YouTube** — Opens YouTube directly
 * 🔎 **Google Search** — Searches Google using a voice command
 * 👋 **Greeting Support** — Responds to "Hello"
@@ -87,8 +87,6 @@ For microphone support, you may also need:
 pip install PyAudio
 ```
 
-If PyAudio gives an installation error on Windows, install it using a compatible method for your Python version.
-
 ---
 
 ## ▶️ How to Run
@@ -110,8 +108,6 @@ Now speak a command.
 ---
 
 # 🎤 Voice Commands
-
-The current version supports the following commands:
 
 ### 🕐 Ask for the Time
 
@@ -165,13 +161,7 @@ Say:
 Open Google
 ```
 
-The assistant will open:
-
-```text
-Google
-```
-
-in your default browser.
+The assistant will open Google in your default browser.
 
 ---
 
@@ -201,7 +191,7 @@ The assistant will open Google and search for:
 Python tutorials
 ```
 
-You can search for anything, for example:
+Other examples:
 
 ```text
 Search for machine learning
@@ -212,7 +202,7 @@ Search for Java tutorials
 ```
 
 ```text
-Search for latest Python projects
+Search for Python projects
 ```
 
 ---
@@ -265,7 +255,7 @@ The basic workflow of the assistant is:
 
 # 🧠 Main Python Concepts Used
 
-This project is also useful for learning several Python concepts:
+This project demonstrates several Python concepts:
 
 * Variables
 * Functions
@@ -282,7 +272,7 @@ This project is also useful for learning several Python concepts:
 
 ---
 
-# 📌 Important Code Components
+# 📌 Main Code Components
 
 ### Initialize Speech Recognizer
 
@@ -290,9 +280,7 @@ This project is also useful for learning several Python concepts:
 recognizer = speech_recognition.Recognizer()
 ```
 
-This creates the object responsible for processing speech.
-
----
+Creates the object responsible for processing speech.
 
 ### Capture Microphone Input
 
@@ -300,9 +288,7 @@ This creates the object responsible for processing speech.
 with speech_recognition.Microphone() as mic:
 ```
 
-This accesses the microphone.
-
----
+Accesses the microphone.
 
 ### Convert Speech to Text
 
@@ -311,9 +297,7 @@ audio = recognizer.listen(mic, timeout=15)
 text = recognizer.recognize_google(audio)
 ```
 
-The microphone captures the voice and Google Speech Recognition converts it into text.
-
----
+Captures the voice and converts it into text.
 
 ### Text-to-Speech
 
@@ -323,9 +307,7 @@ engine.say(text)
 engine.runAndWait()
 ```
 
-This converts the assistant's response into spoken audio.
-
----
+Converts the assistant's response into spoken audio.
 
 ### Open a Website
 
@@ -333,46 +315,18 @@ This converts the assistant's response into spoken audio.
 webbrowser.open("https://www.google.com")
 ```
 
-This opens the specified website in the default browser.
+Opens the specified website in the default browser.
 
 ---
 
 # 🚧 Current Limitations
 
-This is currently a basic voice assistant, so it has some limitations:
-
 * Requires an internet connection for Google Speech Recognition.
 * Commands need to be spoken in a recognizable way.
-* It currently supports only predefined commands.
+* It currently supports predefined commands.
 * It does not yet have a conversational AI model.
 * It does not maintain conversation history.
-* It cannot perform complex tasks yet.
-
----
-
-# 🚀 Future Improvements
-
-The project can be expanded into a much more powerful personal assistant.
-
-### 🔹 Possible Future Features
-
-* 🤖 AI-powered conversations
-* 🧠 ChatGPT/API integration
-* 🎵 Play music
-* 📧 Send emails
-* 📱 Control applications
-* 📂 Open files and folders
-* 💻 Execute system commands
-* 🌦️ Weather information
-* 📰 News updates
-* 🔍 Wikipedia search
-* ⏰ Alarms and reminders
-* 📝 Create notes
-* 📋 Manage tasks
-* 🔐 Personal authentication
-* 🗣️ Better natural-language understanding
-* 💬 Continuous conversation
-* 📴 Offline speech recognition
+* It cannot perform complex tasks.
 
 ---
 
