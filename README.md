@@ -62,7 +62,7 @@ Before running the project, make sure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Jisan-Voice-Assistant.git
+git clone https://github.com/Jisan0178/OIBSIP_Python_Task1.git
 ```
 
 Move into the project folder:
