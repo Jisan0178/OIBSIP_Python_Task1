@@ -319,16 +319,6 @@ Opens the specified website in the default browser.
 
 ---
 
-# 🚧 Current Limitations
-
-* Requires an internet connection for Google Speech Recognition.
-* Commands need to be spoken in a recognizable way.
-* It currently supports predefined commands.
-* It does not yet have a conversational AI model.
-* It does not maintain conversation history.
-* It cannot perform complex tasks.
-
----
 
 # 📸 Project Demo
 
@@ -380,14 +370,3 @@ Date & Time
 
 This project is part of my journey of learning Python and building practical projects.
 
----
-
-# ⭐ Support
-
-If you find this project useful or interesting, consider giving the repository a ⭐ on GitHub.
-
----
-
-## 📄 License
-
-This project is open-source and available for learning and educational purposes.
