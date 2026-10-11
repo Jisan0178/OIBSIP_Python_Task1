@@ -58,7 +58,17 @@ with speech_recognition.Microphone() as mic:
                 else:
                     response = "What would you like me to search for?"
 
-            elif text == "stop":
+            elif text.startswith("search"):
+                search_query = text.replace("search", "").strip()
+
+                if search_query:
+                    url = "https://www.google.com/search?q=" + search_query
+                    webbrowser.open(url)
+                    response = "Searching for " + search_query
+                else:
+                    response = "What would you like me to search for?"
+
+            elif text == "give up":
                 speak("GoodBye !! See you again...")
                 break
 
