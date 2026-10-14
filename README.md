@@ -324,10 +324,6 @@ Opens the specified website in the default browser.
 
 > Add screenshots or a demo GIF here after uploading them to your repository.
 
-Example:
-
-```markdown
-![Voice Assistant Demo](images/demo.png)
 ```
 
 You can also add a demonstration video:
@@ -335,7 +331,7 @@ You can also add a demonstration video:
 ```markdown
 ## 🎥 Demo
 
-[Watch the Project Demo](YOUR_VIDEO_LINK)
+[Watch the Project Demo](https://lnkd.in/p/dqW5FbJU)
 ```
 
 ---
