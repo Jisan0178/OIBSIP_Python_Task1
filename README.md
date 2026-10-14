@@ -1,47 +1,47 @@
 # 🎙️ Jisan's Personal Voice Assistant
 
-> A simple Python-based personal voice assistant that listens to your voice, understands basic commands, responds using speech, and performs useful tasks such as opening websites, telling the time/date, and searching Google.
+> A Python-based personal voice assistant that listens to voice commands, understands spoken instructions, responds using speech, and performs useful tasks such as telling the time and date, opening websites, and searching Google.
 
 ---
 
 ## ✨ Features
 
-* 🎤 **Voice Recognition** — Understands commands through your microphone
-* 🔊 **Voice Response** — Responds using text-to-speech
-* 🕐 **Time Information** — Tells the current time
-* 📅 **Date Information** — Tells today's date
-* 🌐 **Open Google** — Opens Google directly
-* ▶️ **Open YouTube** — Opens YouTube directly
-* 🔎 **Google Search** — Searches Google using a voice command
-* 👋 **Greeting Support** — Responds to "Hello"
-* 🛑 **Stop Command** — Safely exits the assistant
-* ⚠️ **Error Handling** — Handles unclear speech and speech-recognition errors
+- 🎤 **Voice Recognition** — Recognizes voice commands through the microphone.
+- 🔊 **Voice Response** — Responds to the user using text-to-speech.
+- 🕐 **Time Information** — Tells the current time.
+- 📅 **Date Information** — Provides the current date.
+- 🌐 **Open Google** — Opens Google in the default browser.
+- ▶️ **Open YouTube** — Opens YouTube in the default browser.
+- 🔎 **Google Search** — Searches Google using a voice command.
+- 👋 **Greeting Support** — Responds to greetings such as "Hello".
+- 🛑 **Stop Command** — Exits the assistant with a closing message.
+- ⚠️ **Error Handling** — Handles unclear speech and speech-recognition errors.
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology           | Purpose                            |
-| -------------------- | ---------------------------------- |
-| 🐍 Python            | Main programming language          |
-| 🎤 SpeechRecognition | Converts speech into text          |
-| 🔊 Pyttsx3           | Converts text into speech          |
-| 🕐 Datetime          | Gets current date and time         |
-| 🌐 Webbrowser        | Opens websites and Google searches |
+| Technology           | Purpose                             |
+| -------------------- | ----------------------------------- |
+| 🐍 Python            | Main programming language           |
+| 🎤 SpeechRecognition | Converts spoken commands into text  |
+| 🔊 pyttsx3           | Converts text into speech           |
+| 🕐 datetime          | Retrieves the current date and time |
+| 🌐 webbrowser        | Opens websites and Google searches  |
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-Jisan-Voice-Assistant/
+OIBSIP_Python_Task1/
 │
 ├── voice_assistant.py
 ├── README.md
 └── requirements.txt
 ```
 
-> You can change `voice_assistant.py` to whatever filename you use for your Python program.
+> **Note:** Replace `voice_assistant.py` with the actual name of your Python file if it is different.
 
 ---
 
@@ -49,149 +49,151 @@ Jisan-Voice-Assistant/
 
 Before running the project, make sure you have:
 
-* Python 3.x
-* Working microphone
-* Internet connection
-* A web browser
-* Required Python libraries
+- Python 3.x
+- A working microphone
+- An internet connection for online speech recognition
+- A web browser
+- The required Python libraries
 
 ---
 
 ## 📦 Installation
 
-### 1. Clone the Repository
+### 1. Install Python
+
+Download Python from the official website:
+
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+During installation on Windows, enable **Add Python to PATH** if the installer provides that option.
+
+### 2. Clone the Repository
+
+Open a terminal and run:
 
 ```bash
 git clone https://github.com/Jisan0178/OIBSIP_Python_Task1.git
 ```
 
-Move into the project folder:
+### 3. Open the Project Folder
 
 ```bash
-cd Jisan-Voice-Assistant
+cd OIBSIP_Python_Task1
 ```
 
----
+### 4. Install Required Libraries
 
-### 2. Install Required Libraries
-
-Run:
+Install the main dependencies using:
 
 ```bash
 pip install SpeechRecognition pyttsx3
 ```
 
-For microphone support, you may also need:
+For microphone support, install PyAudio if required:
 
 ```bash
 pip install PyAudio
 ```
 
+> **Note:** PyAudio installation can depend on your Python version and operating system. If your project already has a `requirements.txt` file, you can install its dependencies with `pip install -r requirements.txt`.
+
 ---
 
 ## ▶️ How to Run
 
-Open the project in **VS Code**.
-
-Then open the VS Code terminal and run:
+1. Open the project folder in **Visual Studio Code**.
+2. Open the integrated terminal.
+3. Make sure the required libraries are installed.
+4. Run your Python file:
 
 ```bash
-python voice_assistant.py
+python voice_ass.py
 ```
 
-The assistant will initialize your microphone and say:
+5. Allow microphone access if prompted.
+6. Wait for the assistant's greeting and speak a supported command clearly.
+
+The assistant starts with a welcome message similar to:
 
 > "Hello! Welcome to Jisan's personal Voice Assistant. How can I help you today..."
 
-Now speak a command.
+The exact message depends on your Python code.
 
 ---
 
-# 🎤 Voice Commands
+## 🎤 Voice Commands
+
+The following examples describe the intended commands. Use only those that are implemented in your current version of the program.
 
 ### 🕐 Ask for the Time
 
-Say:
+**Say:**
 
 ```text
 What is the time
 ```
 
-Example response:
+**Example response:**
 
 ```text
 The time is 12:30:45 AM
 ```
 
----
-
 ### 📅 Ask for the Date
 
-Say:
+**Say:**
 
 ```text
 What is the date
 ```
 
-Example response:
+**Example response:**
 
 ```text
-Today's date is 08-10-2026
+Today's date is 14-10-2026
 ```
-
----
 
 ### 👋 Say Hello
 
-Say:
+**Say:**
 
 ```text
 Hello
 ```
 
-The assistant will respond with a greeting.
-
----
+The assistant responds with a greeting.
 
 ### 🌐 Open Google
 
-Say:
+**Say:**
 
 ```text
 Open Google
 ```
 
-The assistant will open Google in your default browser.
-
----
+The assistant opens Google in your default web browser.
 
 ### ▶️ Open YouTube
 
-Say:
+**Say:**
 
 ```text
 Open YouTube
 ```
 
-The assistant will open YouTube in your default browser.
-
----
+The assistant opens YouTube in your default web browser.
 
 ### 🔎 Search Google
 
-Say:
+**Say:**
 
 ```text
 Search for Python tutorials
 ```
 
-The assistant will open Google and search for:
+The assistant opens Google and searches for Python tutorials.
 
-```text
-Python tutorials
-```
-
-Other examples:
+**Other examples:**
 
 ```text
 Search for machine learning
@@ -205,164 +207,194 @@ Search for Java tutorials
 Search for Python projects
 ```
 
----
-
 ### 🛑 Stop the Assistant
 
-Say:
+**Say:**
 
 ```text
-Stop
+give up
 ```
 
-The assistant will say goodbye and terminate the program.
+If your program supports this command, the assistant says goodbye and terminates.
 
 ---
 
-# 🔄 How It Works
+## 🔄 How It Works
 
-The basic workflow of the assistant is:
+The assistant follows a simple voice-processing workflow:
 
 ```text
-        🎤 Microphone
-             │
-             ▼
-     Speech Recognition
-             │
-             ▼
-      Convert Speech
-        → Text
-             │
-             ▼
-       Check Command
-             │
-      ┌──────┼─────────┐
-      ▼      ▼         ▼
-     Time   Date    Web Search
-      │      │         │
-      └──────┼─────────┘
-             ▼
+          🎤 Microphone
+               │
+               ▼
+      Speech Recognition
+               │
+               ▼
+       Convert Speech
+          into Text
+               │
+               ▼
+        Identify Command
+               │
+       ┌───────┼────────┐
+       ▼       ▼        ▼
+      Time    Date   Web Commands
+                       │
+                       ▼
+                 Open or Search
+                   Websites
+       └───────┬────────┘
+               ▼
        Generate Response
-             │
-             ▼
-       Text-to-Speech
-             │
-             ▼
-          🔊 Voice
+               │
+               ▼
+        Text-to-Speech
+               │
+               ▼
+           🔊 Voice
 ```
 
----
+### Workflow Explanation
 
-# 🧠 Main Python Concepts Used
-
-This project demonstrates several Python concepts:
-
-* Variables
-* Functions
-* `if / elif / else`
-* `while` loops
-* `try / except`
-* String methods
-* String formatting
-* External libraries
-* Microphone input
-* Text-to-speech
-* Web browser automation
-* Date and time handling
+1. The microphone captures the user's voice.
+2. SpeechRecognition processes the recorded audio and converts it into text.
+3. The program checks the recognized text to identify the requested command.
+4. Python executes the corresponding action, such as providing the time or opening a website.
+5. The assistant responds through pyttsx3.
 
 ---
 
-# 📌 Main Code Components
+## 🧠 Main Python Concepts Used
 
-### Initialize Speech Recognizer
+This project demonstrates practical use of:
+
+- Variables and strings
+- Functions
+- Conditional statements (`if`, `elif`, `else`)
+- Loops
+- Exception handling (`try` and `except`)
+- Python modules and external libraries
+- Microphone input
+- Speech recognition
+- Text-to-speech conversion
+- Date and time handling
+- Web browser automation
+
+---
+
+## 📌 Main Code Components
+
+The following snippets illustrate the key operations used in a typical implementation of this project. Your actual code may differ.
+
+### 1. Initialize the Speech Recognizer
 
 ```python
 recognizer = speech_recognition.Recognizer()
 ```
 
-Creates the object responsible for processing speech.
+Creates a recognizer object that processes audio for speech recognition.
 
-### Capture Microphone Input
+### 2. Capture Microphone Input
 
 ```python
 with speech_recognition.Microphone() as mic:
+    audio = recognizer.listen(mic, timeout=15)
 ```
 
-Accesses the microphone.
+Accesses the microphone and listens for audio input.
 
-### Convert Speech to Text
+### 3. Convert Speech to Text
 
 ```python
-audio = recognizer.listen(mic, timeout=15)
 text = recognizer.recognize_google(audio)
 ```
 
-Captures the voice and converts it into text.
+Uses Google's speech recognition service to convert captured audio into text. Internet access is generally required.
 
-### Text-to-Speech
+### 4. Convert Text to Speech
 
 ```python
 engine = pyttsx3.init()
-engine.say(text)
+engine.say("Hello! How can I help you?")
 engine.runAndWait()
 ```
 
-Converts the assistant's response into spoken audio.
+Initializes the text-to-speech engine and speaks the provided message.
 
-### Open a Website
+### 5. Open a Website
 
 ```python
 webbrowser.open("https://www.google.com")
 ```
 
-Opens the specified website in the default browser.
+Opens Google in the default web browser.
+
+### 6. Get the Current Date and Time
+
+```python
+import datetime
+
+current_time = datetime.datetime.now().strftime("%I:%M:%S %p")
+current_date = datetime.datetime.now().strftime("%d-%m-%Y")
+```
+
+Uses the `datetime` module to retrieve and format the current time and date.
 
 ---
 
+## 📸 Project Screenshots
 
-# 📸 Project Demo
+You can add screenshots of your project here after uploading the image files to your GitHub repository.
 
-> Add screenshots or a demo GIF here after uploading them to your repository.
-
-```
-
-You can also add a demonstration video:
+For example:
 
 ```markdown
-## 🎥 Demo
-
-[Watch the Project Demo](https://lnkd.in/p/dqW5FbJU)
+![Voice Assistant Screenshot](screenshots/voice-assistant.png)
 ```
+
+Replace the image path with the actual location of your screenshot.
 
 ---
 
-# 📚 Learning Purpose
+## 🎥 Project Demo
 
-This project was created as a practical Python project to understand how different Python libraries can work together to create a real-world application.
+Watch the project demonstration on LinkedIn:
 
-It combines:
+**[Watch the Voice Assistant Demo](https://lnkd.in/p/dqW5FbJU)**
 
-```text
-Python
-   +
-Speech Recognition
-   +
-Text-to-Speech
-   +
-Web Browser Automation
-   +
-Date & Time
-   =
-🎙️ Personal Voice Assistant
-```
 
 ---
 
-# 👨‍💻 Author
+## 📚 Learning Outcomes
 
-## Jisan Ali
+Through this project, I gained practical experience with:
 
-🎓 B.Tech — Computer Science & Engineering (AI & ML)
+- Building a voice-based application using Python
+- Integrating speech recognition and text-to-speech libraries
+- Handling microphone input and spoken commands
+- Working with date and time functions
+- Opening websites and performing web searches
+- Practicing functions, conditional statements, loops, and exception handling
+- Organizing and documenting a Python project using GitHub
 
-This project is part of my journey of learning Python and building practical projects.
+---
+
+## 👨‍💻 Author
+
+**Jisan Ali**
+
+🎓 B.Tech — Computer Science and Engineering (AI & ML)
+
+Python Programming Intern — Oasis Infobyte (OIBSIP)
+
+This project was developed as part of my Python programming learning journey and internship experience at Oasis Infobyte.
+
+---
+
+## 🔗 Links
+
+- **GitHub Repository:** [OIBSIP Python Task 1](https://github.com/Jisan0178/OIBSIP_Python_Task1)
+- **Oasis Infobyte Website:** [https://oasisinfobyte.com/](https://oasisinfobyte.com/)
+
+---
 
