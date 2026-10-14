@@ -342,17 +342,6 @@ Uses the `datetime` module to retrieve and format the current time and date.
 
 ---
 
-## 📸 Project Screenshots
-
-You can add screenshots of your project here after uploading the image files to your GitHub repository.
-
-For example:
-
-```markdown
-![Voice Assistant Screenshot](screenshots/voice-assistant.png)
-```
-
-Replace the image path with the actual location of your screenshot.
 
 ---
 
